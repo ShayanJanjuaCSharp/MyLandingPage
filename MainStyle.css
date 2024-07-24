@@ -1,5 +1,49 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: 'SmithyXT-Heavy';   
 }
+
+@font-face {
+    font-family: ClP;
+    src: url('ClarendonPaint.ttf');
+  }
+  @font-face {
+    font-family: 'SmithyXT-Heavy';
+    src:url('SmithyXT-Heavy.ttf.woff') format('woff'),
+        url('SmithyXT-Heavy.ttf.svg#SmithyXT-Heavy') format('svg'),
+        url('SmithyXT-Heavy.ttf.eot'),
+        url('SmithyXT-Heavy.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 0px;
+    align-items: flex;
+  }
+
+  button{
+    font-size: x-large;
+  }
+
+  butt{
+    background-image: src = 'vintage-textured-watercolor-paper-background.jpg';
+  }
+
+  video{
+    margin-bottom: 0px;
+  }
+
+  button{
+    background-color: transparent;
+    border: 0cap;
+    color: navy;
+  }
+
+
