@@ -9,29 +9,58 @@
     </video>
     <div class = "grid-container">
         <div class="butt" height = "100%" style="background-image: url(vintage-textured-watercolor-paper-background.jpg);">
-            <br>
-            <br>
-            <br>
-            <br>
+
+            <p id = "GitHub">Check out my GitHub down below!</p>
             <br>
             <br>
             <br>
             
-            <p style = "font-size: 3em;">Check out my GitHub down below!</p>
+            <p  id = "gh1">I have many incredible projects yet</p> 
+            <p  id = "gh2">to come, so watch this space!</p>
             <br>
             <br>
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <p style = "font-size: 1em;">I have many incredible projects yet</p> 
-            <p style = "font-size: 1em;">to come, so watch this space!</p>
-            <br>
-            <br>
-            <button width = "200" height = "200">GitHub</button>
+
+            <button id = "gh3">GitHub</button>
         </div>
-        <div class="vid"><video width = "100%" preload= "auto" autoplay muted><source src = "Videos\github.mp4"></video></div>
+        <div class="vid"><video width = "100%" preload= "auto" autoplay muted><source src = "Videos\Better Github.mp4"></video></div>
+        <div class="butt" height = "100%" style="background-image: url(vintage-textured-watercolor-paper-background.jpg);">
+            <p  id = "Connect">Connect with me!</p>
+            <br>
+            <br>
+            <br>
+            <p  id = "c1">Connect with me on Linked In.</p> 
+            <p  id = "c2">I'm open for hiring and am always willing</p>
+            <p id = "c3">to share my experience and expertise</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button id = "c4">Linked In</button>
+        </div>
+        <div class="vid"><video width = "100%" preload= "auto" autoplay muted><source src = "Videos\Linked in.mp4"></video></div>
     </div>
-    <footer><div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div></footer>
+    
 </html>
+
+<script>
+    let w = window.innerWidth;
+    var x =0;
+    function updateSize(){
+        w = window.innerWidth;
+        document.getElementById("GitHub").style.fontSize = w*0.003 + "em";
+        document.getElementById("gh1").style.fontSize = w*0.0015 + "em";
+        document.getElementById("gh2").style.fontSize = w*0.0015 + "em";
+        document.getElementById("gh3").style.fontSize = w*0.0015 + "em";
+        document.getElementById("Connect").style.fontSize = w*0.003 + "em";
+        document.getElementById("c1").style.fontSize = w*0.0015 + "em";
+        document.getElementById("c2").style.fontSize = w*0.0015 + "em";
+        document.getElementById("c3").style.fontSize = w*0.0015 + "em";
+        document.getElementById("c4").style.fontSize = w*0.0015 + "em";
+        setTimeout(updateSize, 20);
+    }
+    updateSize()
+</script>

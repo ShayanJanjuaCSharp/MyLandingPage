@@ -21,7 +21,8 @@
 
   .grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: 50% 50%;
     margin: 0%;
     padding: 0%;
     margin-top: 0px;
@@ -33,7 +34,7 @@
   }
 
   butt{
-    background-image: src = 'vintage-textured-watercolor-paper-background.jpg';
+    background-image: src = 'paper.jpg';
   }
 
   video{
