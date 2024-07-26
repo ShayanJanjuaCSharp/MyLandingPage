@@ -21,7 +21,7 @@
 
   .grid-container {
     display: grid;
-    grid-template-columns: 33% 66%;
+    grid-template-columns: 33% 67%;
     grid-template-rows: 50% 50%;
     margin: 0%;
     padding: 0%;
@@ -33,8 +33,11 @@
     font-size: x-large;
   }
 
-  butt{
-    background-image: src = 'paper.jpg';
+
+  aboutme{
+    width: 6000 + "px";
+    width: 4000 + "px";
+    background-image: src = url('paperBG.jpg');
   }
 
   video{

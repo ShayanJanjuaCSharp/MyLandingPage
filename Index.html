@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="stylesheet" href="MainStyle.css">
+    </head>
+    <video width = "100%" preload = "auto" autoplay muted>
+        <source src = "Videos\Main.mp4" type = "video/mp4">
+    </video>
+    <video width = "100%" preload = "auto" autoplay muted>
+        <source src = "Videos\about me.mp4" type = "video/mp4">
+    </video>
+    <div  class = "aboutme" style="background-color: #f9f5ee;" width = "6000px" height = "4000px">
+        <p id = "am1" style = "text-align: center;">Hi. My name is Shayan, and i'm a 17 year old Sixth Form leaver preparing to start university this year.</p>
+        <p id = "am2" style = "text-align: center;">I have experience with coding languages such as C#, Python Javascript .etc</p>
+        <br><br>
+        <p id = "am3" style = "text-align: center;">I am interested in AI, specifically machine Learning, and am currently</p>
+        <p id = "am4" style = "text-align: center;">participating in the fellowship in which I am going to build 5 AI projects.</p>
+    </div>
+    <div class = "grid-container">
+        <div class="butt" height = "100%" style="background-color: #f9f5ee;">
+
+            <p id = "GitHub">Check out my GitHub down below!</p>
+            <br>
+            <br>
+            <br>
+            
+            <p  id = "gh1">I have many incredible projects yet</p> 
+            <p  id = "gh2">to come, so watch this space!</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <button id = "gh3" onclick="toGH()" onmouseenter="colour()" onmouseleave="colourrevert()">GitHub</button>
+        </div>
+        <div class="vid"><video width = "100%" preload= "auto" autoplay muted><source src = "Videos\Better Github.mp4"></video></div>
+        <div class="butt" height = "100%" style="background-color: #f9f5ee;">
+            <p  id = "Connect">Connect with me!</p>
+            <br>
+            <br>
+            <br>
+            <p  id = "c1">Connect with me on Linked In.</p> 
+            <p  id = "c2">I'm open for hiring and am always willing</p>
+            <p id = "c3">to share my experience and expertise</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button id = "c4"onclick="toLI()" onmouseenter="colour2()" onmouseleave="colourrevert2()">Linked In</button>
+        </div>
+        <div class="vid"><video width = "100%" preload= "auto" autoplay muted><source src = "Videos\Linked in.mp4"></video></div>
+    </div>
+    
+</html>
+
+<script>
+    let w = window.innerWidth;
+    var x =0;
+    function updateSize(){
+        w = window.innerWidth;
+        document.getElementById("GitHub").style.fontSize = w*0.003 + "em";
+        document.getElementById("gh1").style.fontSize = w*0.0015 + "em";
+        document.getElementById("gh2").style.fontSize = w*0.0015 + "em";
+        document.getElementById("gh3").style.fontSize = w*0.0015 + "em";
+        document.getElementById("Connect").style.fontSize = w*0.003 + "em";
+        document.getElementById("c1").style.fontSize = w*0.0015 + "em";
+        document.getElementById("c2").style.fontSize = w*0.0015 + "em";
+        document.getElementById("c3").style.fontSize = w*0.0015 + "em";
+        document.getElementById("c4").style.fontSize = w*0.0015 + "em";
+        document.getElementById("am1").style.fontSize = w*0.0015 + "em";
+        document.getElementById("am2").style.fontSize = w*0.0015 + "em";
+        document.getElementById("am3").style.fontSize = w*0.0015 + "em";
+        document.getElementById("am4").style.fontSize = w*0.0015 + "em";
+        setTimeout(updateSize, 1);
+    }
+    updateSize()
+
+    function toGH(){
+        window.open("https://github.com/ShayanJanjuaCSharp", '_blank').focus();
+    }
+    function toLI(){
+        window.open("https://www.linkedin.com/in/shayan-ishaq-janjua-2202a431b/", '_blank').focus();
+    }
+
+    function colour(){
+        document.getElementById("gh3").style.color = "#42b8b8";
+    }
+    function colourrevert(){
+        document.getElementById("gh3").style.color = "navy";
+    }
+    function colour2(){
+        document.getElementById("c4").style.color = "#42b8b8";
+    }
+    function colourrevert2(){
+        document.getElementById("c4").style.color = "navy";
+    }
+</script>
