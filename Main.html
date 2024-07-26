@@ -23,7 +23,7 @@
             <br>
             <br>
 
-            <button id = "gh3">GitHub</button>
+            <button id = "gh3" onclick="toGH()" onmouseenter="colour()" onmouseleave="colourrevert()">GitHub</button>
         </div>
         <div class="vid"><video width = "100%" preload= "auto" autoplay muted><source src = "Videos\Better Github.mp4"></video></div>
         <div class="butt" height = "100%" style="background-image: url(vintage-textured-watercolor-paper-background.jpg);">
@@ -39,7 +39,7 @@
             <br>
             <br>
             <br>
-            <button id = "c4">Linked In</button>
+            <button id = "c4"onclick="toGH()" onmouseenter="colour2()" onmouseleave="colourrevert2()">Linked In</button>
         </div>
         <div class="vid"><video width = "100%" preload= "auto" autoplay muted><source src = "Videos\Linked in.mp4"></video></div>
     </div>
@@ -60,7 +60,24 @@
         document.getElementById("c2").style.fontSize = w*0.0015 + "em";
         document.getElementById("c3").style.fontSize = w*0.0015 + "em";
         document.getElementById("c4").style.fontSize = w*0.0015 + "em";
-        setTimeout(updateSize, 20);
+        setTimeout(updateSize, 1);
     }
     updateSize()
+
+    function toGH(){
+        window.open("https://github.com/ShayanJanjuaCSharp", '_blank').focus();
+    }
+
+    function colour(){
+        document.getElementById("gh3").style.color = "#42b8b8";
+    }
+    function colourrevert(){
+        document.getElementById("gh3").style.color = "navy";
+    }
+    function colour2(){
+        document.getElementById("c4").style.color = "#42b8b8";
+    }
+    function colourrevert2(){
+        document.getElementById("c4").style.color = "navy";
+    }
 </script>
